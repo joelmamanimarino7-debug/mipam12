@@ -70,9 +70,9 @@ p{line-height:1.7;color:var(--gray);margin:0 0 1rem;}
 .hero-shade{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.45) 0%, rgba(0,0,0,.65) 100%);}
 .hero-inner{position:relative;z-index:1;max-width:720px;margin:0 auto;padding:6rem 1.5rem 2rem;text-align:center;}
 .kicker{
-  text-transform:uppercase;letter-spacing:.1em;font-size:.8rem;font-weight:700;color:var(--orange);margin-bottom:1rem;
+  text-transform:uppercase;letter-spacing:.1em;font-size:.8rem;font-weight:700;color:#fff;margin-bottom:1rem;
 }
-.kicker.dark{color:var(--orange);}
+.kicker.dark{color:#2563eb;}
 .hero h1{font-size:clamp(2.1rem,5vw,3.4rem);margin-bottom:1.2rem;}
 .hero-text{color:rgba(255,255,255,.88);max-width:480px;margin:0 auto 1.8rem;}
 .hero-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
