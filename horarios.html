@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horarios — MIPAM Sucre</title>
+<meta name="description" content="Horarios de cultos y ministerios del Ministerio Internacional Primera Asamblea en Sucre: domingo, miércoles, jueves y sábados, con las redes de niños, pre-juveniles, jóvenes y escuela de líderes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo.jpg" alt="Logo MIPAM" class="brand-logo">
+      <span>Ministerio Internacional Primera Asamblea</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Inicio</a>
+      <a href="conocenos.html">Conócenos</a>
+      <a href="horarios.html" class="is-active">Horarios</a>
+      <a href="radios.html">Radios</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="conecta.html">Soy nuevo</a>
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Cambiar idioma">Castellano / Qhishwa</button>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="https://wa.me/59167600229" target="_blank" rel="noopener">Escríbenos</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- CULTOS Y HORARIOS -->
+  <section class="section page-hero-spacer" id="horarios">
+    <div class="container">
+      <p class="kicker dark center reveal" data-lang="es">Horarios</p>
+      <p class="kicker dark center reveal" data-lang="qu" hidden>Pakuna</p>
+      <h2 class="center reveal" data-lang="es">Cultos y horarios</h2>
+      <h2 class="center reveal" data-lang="qu" hidden>Tantakuykuna pakunapi</h2>
+
+      <h3 class="group-title reveal" data-lang="es">Domingo</h3>
+      <h3 class="group-title reveal" data-lang="qu" hidden>Intichaw</h3>
+      <div class="cards cards-3 reveal-stagger">
+        <div class="card reveal">
+          <span class="card-top">1er turno</span>
+          <span class="card-big">8:30 – 10:30</span>
+          <button class="btn btn-outline btn-cal" data-cal-title="Culto MIPAM - 1er turno" data-cal-time="08:30-10:30">Agregar al calendario</button>
+        </div>
+        <div class="card reveal">
+          <span class="card-top">2do turno · <span class="qu-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5a11.5 11.5 0 0 1 0 17M12 3.5a11.5 11.5 0 0 0 0 17"/></svg> Quechua</span></span>
+          <span class="card-big">14:00 – 16:00</span>
+          <button class="btn btn-outline btn-cal" data-cal-title="Culto MIPAM - Quechua" data-cal-time="14:00-16:30">Agregar al calendario</button>
+        </div>
+        <div class="card reveal">
+          <span class="card-top">3er turno</span>
+          <span class="card-big">17:00 – 19:00</span>
+          <button class="btn btn-outline btn-cal" data-cal-title="Culto MIPAM - 3er turno" data-cal-time="17:00-19:00">Agregar al calendario</button>
+        </div>
+      </div>
+
+      <h3 class="group-title reveal" data-lang="es">Miércoles y Jueves</h3>
+      <h3 class="group-title reveal" data-lang="qu" hidden>Quyllur p'unchaw - Illapa p'unchaw</h3>
+      <div class="cards cards-2 reveal-stagger">
+        <div class="card reveal">
+          <span class="card-top">Culto de Ayuno y Oración</span>
+          <span class="card-big">Miércoles · 12:00</span>
+        </div>
+        <div class="card reveal">
+          <span class="card-top">Culto de Intercesión</span>
+          <span class="card-big">Jueves · 19:30</span>
+        </div>
+      </div>
+
+      <h3 class="group-title reveal" data-lang="es">Sábados · Ministerios y Redes</h3>
+      <h3 class="group-title reveal" data-lang="qu" hidden>Sábadupi · Redes</h3>
+      <p class="sub center reveal">Cada ministerio tiene su propio espacio, líderes y horarios. Escríbenos directo por WhatsApp.</p>
+      <div class="cards cards-2 reveal-stagger ministry-grid">
+        <div class="card ministry-card reveal">
+          <img src="assets/img/congregacion-culto.jpg" alt="Red de Niños MIPAM" class="ministry-photo">
+          <h3>Red MIPAM KIDS · Niños</h3>
+          <p class="ministry-age">4 a 12 años</p>
+          <p>Adoración, Palabra adaptada y juegos para que los más pequeños conozcan a Jesús desde temprano.</p>
+          <span class="card-big small">Sábado · 14:00</span>
+          <a href="https://wa.me/59168660002" target="_blank" rel="noopener" class="btn btn-primary btn-wa">Contacto</a>
+        </div>
+        <div class="card ministry-card reveal">
+          <img src="assets/img/congregacion-culto.jpg" alt="Red de Pre-juveniles MIPAM" class="ministry-photo">
+          <h3>Red KINGS ARMY · Pre-juveniles</h3>
+          <p class="ministry-age">13 a 17 años</p>
+          <p>Discipulado para la pre-adolescencia: identidad, amistad y los primeros pasos de un caminar propio con Dios.</p>
+          <span class="card-big small">Sábado · 16:00</span>
+          <a href="https://wa.me/59178667936" target="_blank" rel="noopener" class="btn btn-primary btn-wa">Contacto</a>
+        </div>
+        <div class="card ministry-card reveal">
+          <img src="assets/img/auditorio-lleno.jpg" alt="Red de Jóvenes MIPAM" class="ministry-photo">
+          <h3>Red de Jóvenes</h3>
+          <p class="ministry-age">18 años en adelante</p>
+          <p>Un espacio de alabanza, enseñanza y comunidad para que los jóvenes vivan su fe con propósito.</p>
+          <span class="card-big small">Sábado · 18:00</span>
+          <a href="https://wa.me/59173448778" target="_blank" rel="noopener" class="btn btn-primary btn-wa">Contacto</a>
+        </div>
+        <div class="card ministry-card reveal">
+          <img src="assets/img/apostol-mensaje.jpg" alt="Escuela de Líderes MIPAM" class="ministry-photo">
+          <h3>Escuela de Líderes</h3>
+          <p class="ministry-age">Para todo adulto en formación</p>
+          <p>Formación bíblica y práctica para quienes se preparan a liderar una célula, red o ministerio. Inscripciones abiertas todo el año.</p>
+          <span class="card-big small">Consulta días de clase</span>
+          <a href="https://wa.me/59174458453" target="_blank" rel="noopener" class="btn btn-primary btn-wa">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="assets/img/logo.jpg" alt="Logo MIPAM" class="brand-logo light">
+      <span class="brand light">Ministerio Internacional Primera Asamblea</span>
+      <p>Sucre, Bolivia</p>
+    </div>
+    <div>
+      <h4>Secciones</h4>
+      <p><a href="conocenos.html">Conócenos</a></p>
+      <p><a href="horarios.html">Horarios</a></p>
+      <p><a href="radios.html">Radios</a></p>
+      <p><a href="eventos.html">Eventos</a></p>
+      <p><a href="diezmos.html">Diezmos y ofrendas</a></p>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <p>Calle Demetrio Canelas # 50, Sucre</p>
+      <p><a href="https://wa.me/59167600229" target="_blank" rel="noopener">+591 67600229</a></p>
+      <p><a href="https://www.facebook.com/mipamsucre" target="_blank" rel="noopener">Facebook</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Ministerio Internacional Primera Asamblea. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/59167600229" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.2-.6.9-.8 1.1-.1.2-.3.2-.5.1-1.4-.7-2.3-1.2-3.2-2.8-.2-.3 0-.4.2-.6.2-.2.4-.5.6-.7.2-.2.2-.4.1-.6-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4-.2 0-.4 0-.6 0-.2 0-.5.1-.7.4-.2.3-.9 1-.9 2.3 0 1.3 1 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 2.7 1 2.7.7 3.2.6.5-.1 1.6-.6 1.8-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3a8.2 8.2 0 1 1 7.2 3.8z"/></svg>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>

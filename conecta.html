@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soy nuevo / Conecta — MIPAM Sucre</title>
+<meta name="description" content="Da tu primer paso para conocer a Jesús, qué esperar en tu primera visita, petición de oración y ubicación del Ministerio Internacional Primera Asamblea en Sucre.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header theme-solemn" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo.jpg" alt="Logo MIPAM" class="brand-logo">
+      <span>Ministerio Internacional Primera Asamblea</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Inicio</a>
+      <a href="conocenos.html">Conócenos</a>
+      <a href="horarios.html">Horarios</a>
+      <a href="radios.html">Radios</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="conecta.html" class="is-active">Soy nuevo</a>
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Cambiar idioma">Castellano / Qhishwa</button>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="https://wa.me/59167600229" target="_blank" rel="noopener">Escríbenos</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- SOY NUEVO / CONECTA -->
+  <section class="section page-hero-spacer section-solemn" id="conecta">
+    <div class="container">
+      <p class="kicker dark center reveal">Soy nuevo</p>
+      <h2 class="center reveal">Da tu primer paso</h2>
+      <p class="sub center reveal">Sea que vienes por primera vez a un culto o que hoy es el día en que decides conocer a Jesús, este es tu lugar. Te explicamos cómo dar el siguiente paso.</p>
+    </div>
+
+    <div class="container" id="primer-paso">
+      <div class="step-card reveal">
+        <p class="kicker">Tu primer paso</p>
+        <h2>¿Quieres conocer a Jesús hoy?</h2>
+        <p class="step-intro">La Biblia dice que "todo aquel que invoca el nombre del Señor será salvo" (Romanos 10:13). Si quieres recibir a Jesús como tu Señor y Salvador, puedes hacer esta oración en voz alta, con fe, ahora mismo:</p>
+        <blockquote class="step-prayer">
+          "Señor Jesús, hoy me acerco a ti, te pido que perdones mis pecados y escribas mi nombre en el libro de la vida, te recibo como mi Señor y Salvador, amén."
+        </blockquote>
+        <p class="step-after">Si hiciste esta oración de corazón, ¡bienvenido a la familia de Dios! Cuéntanoslo para acompañarte en este nuevo camino.</p>
+
+        <button type="button" id="hicePrayerBtn" class="btn btn-primary" data-wa-link="https://wa.me/59167600229?text=Hola%2C%20hoy%20hice%20la%20oraci%C3%B3n%20para%20recibir%20a%20Jes%C3%BAs%20y%20quiero%20contarles">Hice esta oración</button>
+
+        <div id="welcomeMessage" class="step-welcome" hidden>
+          <p class="step-welcome-title">Bienvenido a la familia de Dios</p>
+          <p class="step-welcome-text">Te invitamos a que puedas ser parte de una célula, nos reuniremos para poder compartir contigo la palabra de Dios, tu vida nunca más será la misma.</p>
+          <a href="https://wa.me/59167600229?text=Hola%2C%20hoy%20hice%20la%20oraci%C3%B3n%20para%20recibir%20a%20Jes%C3%BAs%20y%20quiero%20contarles" target="_blank" rel="noopener" class="btn btn-outline step-welcome-btn">Continuar a WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container two-col" id="oracion">
+      <div class="reveal">
+        <p class="kicker dark">Peticiones de oración</p>
+        <h2>Quiero que oren por mí</h2>
+        <p>Cuéntanos tu petición y un líder orará por ti. También puedes escribirnos directo por WhatsApp.</p>
+        <form id="prayerForm" class="prayer-form">
+          <input type="text" id="prayerName" placeholder="Tu nombre" required>
+          <textarea id="prayerRequest" placeholder="Tu petición de oración" rows="3" required></textarea>
+          <button type="submit" class="btn btn-primary">Enviar por WhatsApp</button>
+        </form>
+      </div>
+      <div class="contact-card reveal">
+        <h3>MIPAM Sucre</h3>
+        <p>Calle Demetrio Canelas # 50<br>Sucre, Bolivia</p>
+        <p>+591 67600229 (WhatsApp)</p>
+        <p>Apóstoles Ramiro Mamani &amp; Patricia Mariño</p>
+        <a href="https://wa.me/59167600229" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:1rem;border-color:rgba(255,255,255,.5);color:#fff;">Escribir por WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="container" id="ubicacion">
+      <p class="kicker dark center reveal">Ubicación</p>
+      <h2 class="center reveal">Encuéntranos en Sucre</h2>
+    </div>
+    <div class="map-wrap reveal">
+      <iframe
+        src="https://www.google.com/maps?q=Calle+Demetrio+Canelas+50,+Sucre,+Bolivia&output=embed"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa de ubicación de MIPAM"></iframe>
+    </div>
+    <div class="container">
+      <div class="address-row reveal">
+        <div>
+          <span class="address-label">Dirección</span>
+          <span class="address-text">Calle Demetrio Canelas # 50, Sucre, Bolivia</span>
+        </div>
+        <a href="https://maps.app.goo.gl/FByJvv5zRxsVNpNu8" target="_blank" rel="noopener" class="btn btn-outline">Cómo llegar</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="assets/img/logo.jpg" alt="Logo MIPAM" class="brand-logo light">
+      <span class="brand light">Ministerio Internacional Primera Asamblea</span>
+      <p>Sucre, Bolivia</p>
+    </div>
+    <div>
+      <h4>Secciones</h4>
+      <p><a href="conocenos.html">Conócenos</a></p>
+      <p><a href="horarios.html">Horarios</a></p>
+      <p><a href="radios.html">Radios</a></p>
+      <p><a href="eventos.html">Eventos</a></p>
+      <p><a href="diezmos.html">Diezmos y ofrendas</a></p>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <p>Calle Demetrio Canelas # 50, Sucre</p>
+      <p><a href="https://wa.me/59167600229" target="_blank" rel="noopener">+591 67600229</a></p>
+      <p><a href="https://www.facebook.com/mipamsucre" target="_blank" rel="noopener">Facebook</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Ministerio Internacional Primera Asamblea. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/59167600229" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.2-.6.9-.8 1.1-.1.2-.3.2-.5.1-1.4-.7-2.3-1.2-3.2-2.8-.2-.3 0-.4.2-.6.2-.2.4-.5.6-.7.2-.2.2-.4.1-.6-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4-.2 0-.4 0-.6 0-.2 0-.5.1-.7.4-.2.3-.9 1-.9 2.3 0 1.3 1 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 2.7 1 2.7.7 3.2.6.5-.1 1.6-.6 1.8-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3a8.2 8.2 0 1 1 7.2 3.8z"/></svg>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>
