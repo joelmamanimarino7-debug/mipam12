@@ -36,11 +36,17 @@ document.addEventListener("DOMContentLoaded", function () {
             observer.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.15, rootMargin: "0px 0px -60px 0px" });
+      }, { threshold: 0.05, rootMargin: "0px 0px -40px 0px" });
       revealEls.forEach(function (el) { observer.observe(el); });
     } else {
       revealEls.forEach(function (el) { el.classList.add("is-visible"); });
     }
+    // Safety net: if an element never crosses the intersection threshold
+    // (fast scroll, oversized card, odd layout shift) it would stay
+    // opacity:0 forever and look like a blank section. Force it visible.
+    setTimeout(function () {
+      revealEls.forEach(function (el) { el.classList.add("is-visible"); });
+    }, 2500);
   }
 
   // Toggle Castellano / Qhishwa

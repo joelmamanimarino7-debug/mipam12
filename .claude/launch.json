@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "mipam-web",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "sitio-web", "-p", "8765"],
+      "port": 8765
+    }
+  ]
+}

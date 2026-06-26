@@ -418,6 +418,13 @@ strong{font-weight:600;}
 .reveal-stagger .reveal:nth-child(2){transition-delay:.12s;}
 .reveal-stagger .reveal:nth-child(3){transition-delay:.24s;}
 .reveal-stagger .reveal:nth-child(4){transition-delay:.36s;}
+/* Defensive: if JS never adds is-visible (slow/stale script, JS error),
+   don't leave whole sections blank — force visible after 4s regardless. */
+.reveal{ animation: reveal-fallback 0s 4s forwards; }
+@keyframes reveal-fallback{ to{ opacity:1; transform:none; } }
+@media (prefers-reduced-motion: reduce){
+  .reveal{opacity:1;transform:none;animation:none;}
+}
 
 /* Footer */
 .site-footer{background:var(--ink);color:rgba(255,255,255,.75);padding:4.5rem 0 0;position:relative;border-top:1px solid var(--accent-dark);}
@@ -439,7 +446,7 @@ strong{font-weight:600;}
 .whatsapp-float:hover{transform:scale(1.08);}
 
 /* Responsive */
-@media (max-width:1180px){
+@media (max-width:960px){
   .nav-toggle{display:flex;}
   .main-nav{
     display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;
