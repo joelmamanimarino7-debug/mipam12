@@ -7,93 +7,184 @@
 <meta name="description" content="Ministerio Internacional Primera Asamblea (MIPAM), Sucre - Bolivia. Horarios de cultos, redes, radios en vivo, eventos y ubicación.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="site-header over-hero" id="siteHeader">
+<header class="site-header" id="siteHeader">
   <div class="header-inner">
     <a href="index.html" class="brand">
       <img src="assets/img/logo.jpg" alt="Logo MIPAM" class="brand-logo">
       <span>MINISTERIO INTERNACIONAL PRIMERA ASAMBLEA</span>
     </a>
-
     <nav class="main-nav" id="mainNav">
-      <a href="index.html" class="is-active">Inicio</a>
+      <div class="has-drop">
+        <a href="conecta.html">Soy nuevo</a>
+        <div class="drop">
+          <a href="conecta.html">Da tu primer paso</a>
+          <a href="conecta.html#oracion">Peticiones de oración</a>
+          <a href="index.html#servir">Quiero servir</a>
+          <a href="conecta.html#ubicacion">Ubicación</a>
+        </div>
+      </div>
+      <div class="has-drop">
+        <a href="horarios.html">Horarios</a>
+        <div class="drop">
+          <a href="horarios.html">Domingos</a>
+          <a href="horarios.html">Miércoles y jueves</a>
+          <a href="horarios.html#redes">Redes de sábado</a>
+        </div>
+      </div>
       <a href="conocenos.html">Conócenos</a>
-      <a href="horarios.html">Horarios</a>
-      <a href="radios.html">Radios</a>
       <a href="eventos.html">Eventos</a>
-      <a href="conecta.html">Soy nuevo</a>
-      <button class="lang-toggle" id="langToggle" type="button" aria-label="Cambiar idioma">Castellano / Qhishwa</button>
+      <div class="has-drop">
+        <a href="radios.html">Más</a>
+        <div class="drop">
+          <a href="radios.html">Radios en vivo</a>
+          <a href="https://www.facebook.com/mipamsucre" target="_blank" rel="noopener">Facebook</a>
+          <a href="diezmos.html">Diezmos y ofrendas</a>
+        </div>
+      </div>
     </nav>
-    <a class="btn btn-primary nav-cta" href="https://wa.me/59167600229" target="_blank" rel="noopener">Escríbenos</a>
-
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="header-right">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Cambiar idioma">Castellano / Qhishwa</button>
+      <a class="btn btn-primary btn-sm" href="diezmos.html">Dar</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
   </div>
 </header>
 
 <main>
 
-  <!-- INICIO -->
-  <section class="hero hero--split" id="inicio">
-    <img class="hero-bg" src="assets/img/hero-apostol-predicando.jpg" alt="Congregación de MIPAM Sucre alabando en un culto">
+  <section class="hero" id="inicio">
+    <img class="hero-bg" src="assets/img/hero-apostol-predicando.jpg" alt="Apóstol predicando en un culto de MIPAM Sucre">
     <div class="hero-shade"></div>
-    <div class="hero-inner hero-inner--left">
-      <h1 class="hero-title hero-title--bold">
-        <span class="line">Bienvenido</span>
-        <span class="line accent-line">a Casa</span>
-      </h1>
-      <p class="hero-text">Próximo culto: <strong>Domingo · 8:30 AM</strong> — Calle Demetrio Canelas # 50, Sucre.</p>
-      <div class="hero-actions hero-actions--pill">
-        <a href="horarios.html" class="btn btn-pill btn-pill-primary">Horarios de culto <span class="arrow">→</span></a>
-        <a href="conecta.html" class="btn btn-pill btn-pill-outline">Soy nuevo aquí <span class="arrow">→</span></a>
-      </div>
-      <p class="scroll-label">Desliza para explorar</p>
-    </div>
-
-    <div class="hero-side-cards">
-      <a href="horarios.html" class="side-card reveal">
-        <span class="side-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.5h17"/><path d="M8 3v4M16 3v4"/></svg>
-        </span>
-        <div>
-          <h3>Cultos</h3>
-          <p>Domingos, miércoles, jueves y sábados.</p>
-          <span class="side-link">Ver horarios →</span>
-        </div>
-      </a>
-      <a href="horarios.html" class="side-card reveal">
-        <span class="side-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/><circle cx="17.2" cy="9.2" r="2.3"/><path d="M15.3 13.3c2.4.2 4.4 2 4.4 4.4"/></svg>
-        </span>
-        <div>
-          <h3>Redes Sábado</h3>
-          <p>Niños, Pre-juveniles y Jóvenes, cada uno con su espacio.</p>
-          <span class="side-link">Conocer más →</span>
-        </div>
-      </a>
-      <a href="radios.html" class="side-card reveal">
-        <span class="side-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="14.5" r="2"/><path d="M9 12.3a4.2 4.2 0 0 1 6 0M6.3 9.6a8 8 0 0 1 11.4 0M3.7 7a11.8 11.8 0 0 1 16.6 0"/></svg>
-        </span>
-        <div>
-          <h3>Radios en vivo</h3>
-          <p>Escúchanos online y por FM.</p>
-          <span class="side-link">Escuchar →</span>
-        </div>
-      </a>
+    <div class="hero-inner">
+      <h1>UNA <b>FAMILIA</b><br>PARA QUE TODOS PUEDAN</h1>
+      <p>Próximo culto: <strong>Domingo · 8:30 AM</strong> — Calle Demetrio Canelas # 50, Sucre.</p>
     </div>
   </section>
 
-  <!-- FRASE DEL PASTOR -->
-  <section class="quote-block">
+  <section class="pillars">
+    <div class="pillars-grid">
+      <a href="conocenos.html" class="pillar reveal">Vivir su fe</a>
+      <a href="horarios.html#redes" class="pillar reveal">Crecer en comunidad</a>
+      <a href="conocenos.html" class="pillar reveal">Descubrir su identidad</a>
+      <a href="conecta.html" class="pillar reveal">Sentirse incluidos</a>
+    </div>
+  </section>
+
+  <section class="welcome">
+    <div class="container reveal">
+      <h2 class="title-line">¡Eres bienvenido aquí!</h2>
+      <p>MIPAM es una iglesia en Sucre con el deseo de ayudarte a llegar a ser la persona que Dios creó. Sin importar tu historia, estás invitado a ser parte de lo que Dios está haciendo entre nosotros. Aquí encontrarás una familia a la cual pertenecer mientras descubres quién es Dios y la vida plena que Él tiene para ti. ¡Bienvenido a casa!</p>
+      <a href="conocenos.html" class="btn btn-primary">Conoce nuestra historia</a>
+    </div>
+  </section>
+
+  <section class="band" id="cultos">
+    <img class="band-bg" src="assets/img/auditorio-lleno.jpg" alt="">
+    <div class="container reveal">
+      <h2>NUESTROS <b>CULTOS</b></h2>
+      <div class="link-cols">
+        <a href="horarios.html">Domingo · 8:30 AM</a>
+        <a href="horarios.html">Domingo · 14:00 Quechua</a>
+        <a href="horarios.html">Domingo · 17:00</a>
+        <a href="horarios.html">Miércoles · Ayuno y oración</a>
+        <a href="horarios.html">Jueves · Intercesión</a>
+        <a href="horarios.html#redes">Sábado · Redes</a>
+      </div>
+      <a href="conecta.html#ubicacion" class="btn btn-primary">Cómo llegar</a>
+      <a href="https://wa.me/59167600229" target="_blank" rel="noopener" class="btn btn-primary">Escríbenos por WhatsApp</a>
+    </div>
+  </section>
+
+  <section class="family" id="familia">
     <div class="container">
-      <p class="quote reveal">Este es un lugar para encontrarte con Dios y con una familia que te recibe tal como eres.</p>
-      <p class="quote-by reveal">— Apóstoles Ramiro Mamani &amp; Patricia Mariño</p>
+      <h2 class="reveal">PARA TODA LA <b>FAMILIA</b></h2>
+
+      <div class="zig reveal">
+        <div class="zig-text">
+          <h3>MIPAM KIDS</h3><span class="age">4 a 12 años</span>
+          <p>Nuestra red de niños existe para que los más pequeños conozcan a Jesús como su Señor y Salvador, con adoración, Palabra adaptada y juegos, cada semana.</p>
+          <span class="when">Sábado · 14:00</span>
+          <a href="horarios.html#redes" class="btn btn-primary">Conoce más</a>
+        </div>
+        <div class="zig-img"><img src="assets/img/congregacion-culto.jpg" alt="Red MIPAM Kids"></div>
+      </div>
+
+      <div class="zig flip reveal">
+        <div class="zig-text">
+          <h3>KINGS ARMY</h3><span class="age">Pre-juveniles · 13 a 17 años</span>
+          <p>Creemos que cada pre-adolescente debe crecer en una relación auténtica con Jesús, descubriendo su identidad y sus primeros pasos de un caminar propio con Dios.</p>
+          <span class="when">Sábado · 16:00</span>
+          <a href="horarios.html#redes" class="btn btn-primary">Conoce más</a>
+        </div>
+        <div class="zig-img"><img src="assets/img/auditorio-lleno.jpg" alt="Red Kings Army"></div>
+      </div>
+
+      <div class="zig reveal">
+        <div class="zig-text">
+          <h3>JÓVENES</h3><span class="age">18 años en adelante</span>
+          <p>Un espacio de alabanza, enseñanza y comunidad para que los jóvenes vivan su fe con propósito y sirvan a quienes los rodean.</p>
+          <span class="when">Sábado · 18:00</span>
+          <a href="horarios.html#redes" class="btn btn-primary">Conoce más</a>
+        </div>
+        <div class="zig-img"><img src="assets/img/hero-apostol-predicando.jpg" alt="Red de Jóvenes"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="serve" id="servir">
+    <div class="container serve-inner">
+      <div class="serve-text reveal">
+        <h2>SIRVE EN UN <b>MINISTERIO</b></h2>
+        <p>Dios nos creó con dones para bendecir a otros. Si quieres poner los tuyos al servicio de la iglesia y de tu ciudad, hay un lugar para ti en nuestro equipo. Cuéntanos en qué te gustaría servir y un líder se pondrá en contacto contigo.</p>
+        <a href="https://wa.me/59167600229?text=Hola%2C%20quiero%20servir%20en%20un%20ministerio%20de%20MIPAM" target="_blank" rel="noopener" class="btn btn-light">Quiero servir</a>
+      </div>
+      <ul class="serve-list reveal">
+        <li>Alabanza y adoración</li>
+        <li>Niños · MIPAM Kids</li>
+        <li>Pre-juveniles · Kings Army</li>
+        <li>Jóvenes</li>
+        <li>Intercesión</li>
+        <li>Recepción y bienvenida</li>
+        <li>Sonido, video y medios</li>
+        <li>Escuela de Líderes</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="gradient-band">
+    <div class="gb-row r1 reveal">
+      <img class="gb-photo" src="assets/img/apostol-mensaje.jpg" alt="Escuela de Líderes">
+      <span class="gb-word">Líderes</span>
+      <a href="horarios.html#redes" class="gb-link">Conoce más</a>
+    </div>
+    <div class="gb-row r2 reveal">
+      <img class="gb-photo" src="assets/img/congregacion-culto.jpg" alt="Soy nuevo">
+      <span class="gb-word solid">Nuevo</span>
+      <a href="conecta.html" class="gb-link">Conoce más</a>
+    </div>
+    <div class="gb-row r3 reveal">
+      <img class="gb-photo" src="assets/img/auditorio-lleno.jpg" alt="Eventos">
+      <span class="gb-word">Eventos</span>
+      <a href="eventos.html" class="gb-link">Conoce más</a>
+    </div>
+  </section>
+
+  <section class="wlr">
+    <div class="container">
+      <h2 class="reveal">ESCUCHA | SIGUE | CONECTA</h2>
+      <div class="wlr-grid reveal">
+        <a href="radios.html" class="wlr-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="14.5" r="2"/><path d="M9 12.3a4.2 4.2 0 0 1 6 0M6.3 9.6a8 8 0 0 1 11.4 0M3.7 7a11.8 11.8 0 0 1 16.6 0"/></svg>Radio 1</a>
+        <a href="https://www.facebook.com/mipamsucre" target="_blank" rel="noopener" class="wlr-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 8h2.5V4.5H14a3.5 3.5 0 0 0-3.5 3.5v2H8v3.5h2.5V20H14v-6.5h2.5L17 10h-3V8.5c0-.3.2-.5.5-.5z"/></svg>Facebook</a>
+        <a href="diezmos.html" class="wlr-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>Diezmos</a>
+        <a href="radios.html" class="wlr-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="14.5" r="2"/><path d="M9 12.3a4.2 4.2 0 0 1 6 0M6.3 9.6a8 8 0 0 1 11.4 0M3.7 7a11.8 11.8 0 0 1 16.6 0"/></svg>Radio 2</a>
+        <a href="eventos.html" class="wlr-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></svg>Eventos</a>
+        <a href="conecta.html#ubicacion" class="wlr-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Ubicación</a>
+      </div>
     </div>
   </section>
 
@@ -103,11 +194,12 @@
   <div class="container footer-inner">
     <div class="footer-brand">
       <img src="assets/img/logo.jpg" alt="Logo MIPAM" class="brand-logo light">
-      <span class="brand light">Ministerio Internacional Primera Asamblea</span>
+      <span class="brand">Ministerio Internacional Primera Asamblea</span>
       <p>Sucre, Bolivia</p>
     </div>
     <div>
       <h4>Secciones</h4>
+      <p><a href="conecta.html">Soy nuevo</a></p>
       <p><a href="conocenos.html">Conócenos</a></p>
       <p><a href="horarios.html">Horarios</a></p>
       <p><a href="radios.html">Radios</a></p>
@@ -126,9 +218,7 @@
   </div>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/59167600229" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.2-.6.9-.8 1.1-.1.2-.3.2-.5.1-1.4-.7-2.3-1.2-3.2-2.8-.2-.3 0-.4.2-.6.2-.2.4-.5.6-.7.2-.2.2-.4.1-.6-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4-.2 0-.4 0-.6 0-.2 0-.5.1-.7.4-.2.3-.9 1-.9 2.3 0 1.3 1 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 2.7 1 2.7.7 3.2.6.5-.1 1.6-.6 1.8-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3a8.2 8.2 0 1 1 7.2 3.8z"/></svg>
-</a>
+<a class="whatsapp-float" href="https://wa.me/59167600229" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.2-.6.9-.8 1.1-.1.2-.3.2-.5.1-1.4-.7-2.3-1.2-3.2-2.8-.2-.3 0-.4.2-.6.2-.2.4-.5.6-.7.2-.2.2-.4.1-.6-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4-.2 0-.4 0-.6 0-.2 0-.5.1-.7.4-.2.3-.9 1-.9 2.3 0 1.3 1 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 2.7 1 2.7.7 3.2.6.5-.1 1.6-.6 1.8-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3a8.2 8.2 0 1 1 7.2 3.8z"/></svg></a>
 
 <script src="main.js"></script>
 </body>
